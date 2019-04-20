@@ -25,3 +25,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno508
 
 # Kernel
 TARGET_KERNEL_CONFIG := PL2_defconfig
+
+# Vendor
+BOARD_PREBUILT_VENDORIMAGE := vendor/prebuilt/nokia/PL2/vendor.img
