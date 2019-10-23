@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from nokia sdm660-common
 $(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
@@ -35,19 +35,15 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_OTA_ASSERT_DEVICE := PL2
 
 # Boot Animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES :=1080
 
-PRODUCT_NAME := lineage_PL2
+PRODUCT_NAME := aosp_PL2
 PRODUCT_DEVICE := PL2
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 6.1
 
 PRODUCT_GMS_CLIENTID_BASE := android-hmd
-
-TARGET_VENDOR_PRODUCT_NAME := PL2
-TARGET_VENDOR_DEVICE_NAME := PL2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=PL2_sprout \

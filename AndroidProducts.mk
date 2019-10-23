@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_PL2.mk
+    $(LOCAL_DIR)/aosp_PL2.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_PL2-eng \
-    lineage_PL2-user \
-    lineage_PL2-userdebug
+    aosp_PL2-eng \
+    aosp_PL2-user \
+    aosp_PL2-userdebug
 
